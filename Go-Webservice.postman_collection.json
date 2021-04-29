@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "79801d92-8b87-4b1e-a45a-7105c5840dcb",
+		"name": "Go-Webservice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/products",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\t\t\"manufacturer\": \"Small Box Company\",\r\n\t\t\t\"sku\": \"4hslj90JKL\",\r\n\t\t\t\"upc\": \"424654445566\",\r\n\t\t\t\"pricePerUnit\": \"9.99\",\r\n\t\t\t\"quantityOnHand\": 18,\r\n\t\t\t\"productName\": \"Sprocket\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/products",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/products/2",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productId\": 2,\r\n    \"manufacturer\": \"Test\",\r\n    \"sku\": \"i7v300kmx\",\r\n    \"upc\": \"740979000000\",\r\n    \"pricePerUnit\": \"282.29\",\r\n    \"quantityOnHand\": 9217,\r\n    \"productName\": \"leg warmers\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/products/2",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
